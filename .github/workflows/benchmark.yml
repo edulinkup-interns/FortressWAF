@@ -30,7 +30,7 @@ jobs:
           go test -bench=. -benchmem -run=^$ ./tests/unit/ -count=3 > current.txt
 
       - name: Upload benchmark results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: benchmarks
           path: benchmark.txt
